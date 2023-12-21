@@ -4,7 +4,7 @@ This Django-based API manages employee records and provides analytical insights.
 
 ## Git clone
    ```bash
-   git clone https://github.com/sheikhrokonuzzman34/Managing-employee-records-API.git
+   git clone https://github.com/sheikhrokonuzzman34/Employee-Records-Management-Analytics-Service.git
 
    ``` 
 
