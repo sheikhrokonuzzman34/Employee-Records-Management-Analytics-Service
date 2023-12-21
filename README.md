@@ -4,16 +4,19 @@ This Django-based API manages employee records and provides analytical insights.
 
 ## Git clone
    ```bash
-   git clone https://github.com/sheikhrokonuzzman34/Managing-employee-records-API.git
+   git clone https://github.com/sheikhrokonuzzman34/Employee-Records-Management-Analytics-Service.git
 
    ``` 
 
 
 ## How to Run
 
-1. Install dependencies: `pip install -r requirements.txt`
-2. Apply migrations: `python manage.py migrate`
-3. Run the server: `python manage.py runserver`
+1. virtual environment Crete : `python -m venv env`
+2. virtual environment active : `. env/Scripts/activate`
+3. Install dependencies: `pip install -r requirements.txt`
+4. file directory change : `cd Employee-Records-Management-Analytics-Service/`
+5. Apply migrations: `python manage.py migrate`
+6. Run the server: `python manage.py runserver`
 
 ## Testing
 
