@@ -2,9 +2,7 @@
 
 This Django-based API manages employee records and provides analytical insights.
 
-## Contributing
-
-1. **Clone the Repository:** Clone the forked repository to your local machine using the following command:
+## Git clone
    ```bash
    git clone https://github.com/sheikhrokonuzzman34/Managing-employee-records-API.git
 
