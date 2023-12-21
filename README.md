@@ -119,8 +119,6 @@ python manage.py test
 
 ---
 
-Feel free to customize the documentation further based on your project's specific details and requirements.
-
 
 
 
