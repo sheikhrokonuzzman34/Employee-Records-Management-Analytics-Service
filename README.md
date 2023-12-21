@@ -41,6 +41,7 @@ Run the test suite:
 
 ```bash
 python manage.py test
+```
 
 
 ## Contributing
