@@ -1,4 +1,4 @@
-# Employee Records Management API
+# Employee Records Management & Analytics Service
 
 This Django-based API manages employee records and provides analytical insights.
 
