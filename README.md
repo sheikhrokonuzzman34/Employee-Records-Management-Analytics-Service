@@ -25,30 +25,102 @@ python manage.py test
 
 ## API Endpoints
 
-### Departments
+## Base URL
+- All endpoints are relative to the base URL: `https://example.com/api/`
 
-- **List and Create Departments:**
-  - URL: `/departments/`
-  - Method: `GET` (List), `POST` (Create)
+## Authentication
+- The API requires authentication using [Token Authentication](https://www.django-rest-framework.org/api-guide/authentication/#tokenauthentication).
 
-- **Retrieve, Update, and Delete Department:**
-  - URL: `/departments/<int:pk>/`
-  - Method: `GET` (Retrieve), `PUT` (Update), `DELETE` (Delete)
+---
 
-### Employees
+## Department Endpoints
 
-- **List and Create Employees:**
-  - URL: `/employees/`
-  - Method: `GET` (List), `POST` (Create)
+### List Departments
+- **URL:** `GET /departments/`
+- **Description:** Get a list of all departments.
+- **Authentication:** Required
+- **Response:**
+  - Status Code: 200 OK
+  - Content: List of departments in the system.
 
-- **Retrieve, Update, and Delete Employee:**
-  - URL: `/employees/<int:pk>/`
-  - Method: `GET` (Retrieve), `PUT` (Update), `DELETE` (Delete)
+### Create Department
+- **URL:** `POST /departments/`
+- **Description:** Create a new department.
+- **Authentication:** Required
+- **Request:**
+  - Body: Department data (name).
+- **Response:**
+  - Status Code: 201 Created
+  - Content: Newly created department data.
 
-- **Employee Analytics:**
-  - URL: `/analytics/`
-  - Method: `GET`
-  - Provides analytical data like employee count by department, average tenure, etc.
+### Retrieve, Update, Delete Department
+- **URL:** `GET/PUT/PATCH/DELETE /departments/{department_id}/`
+- **Description:** Get, update, or delete a specific department by ID.
+- **Authentication:** Required
+- **Response:**
+  - Status Code: 200 OK (for GET), 200 OK (for PUT/PATCH), 204 No Content (for DELETE)
+  - Content: Department data.
+
+---
+
+## Employee Endpoints
+
+### List Employees
+- **URL:** `GET /employees/`
+- **Description:** Get a list of all employees.
+- **Authentication:** Required
+- **Response:**
+  - Status Code: 200 OK
+  - Content: List of employees in the system.
+
+### Create Employee
+- **URL:** `POST /employees/`
+- **Description:** Create a new employee.
+- **Authentication:** Required
+- **Request:**
+  - Body: Employee data (name, department, tenure, hire_date).
+- **Response:**
+  - Status Code: 201 Created
+  - Content: Newly created employee data.
+
+### Retrieve, Update, Delete Employee
+- **URL:** `GET/PUT/PATCH/DELETE /employees/{employee_id}/`
+- **Description:** Get, update, or delete a specific employee by ID.
+- **Authentication:** Required
+- **Response:**
+  - Status Code: 200 OK (for GET), 200 OK (for PUT/PATCH), 204 No Content (for DELETE)
+  - Content: Employee data.
+
+---
+
+## Analytics Endpoints
+
+### Employee Analytics
+- **URL:** `GET /analytics/`
+- **Description:** Get analytical data such as employee count by department, average tenure, and more.
+- **Authentication:** Required
+- **Response:**
+  - Status Code: 200 OK
+  - Content: Analytical data.
+
+---
+
+## Error Responses
+- The API may return the following error responses:
+  - Status Code: 400 Bad Request - Invalid request parameters.
+  - Status Code: 401 Unauthorized - Authentication failure.
+  - Status Code: 403 Forbidden - Insufficient permissions.
+  - Status Code: 404 Not Found - Resource not found.
+  - Status Code: 500 Internal Server Error - Unexpected server error.
+
+---
+
+## Versioning
+- This documentation is for version 1 of the Employee Management API.
+
+---
+
+Feel free to customize the documentation further based on your project's specific details and requirements.
 
 
 
