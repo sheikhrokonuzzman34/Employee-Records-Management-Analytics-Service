@@ -35,6 +35,14 @@ python manage.py test
 
 ---
 
+## django default database
+- django default database URL: `http://127.0.0.1:8000/admin/`
+  ```text
+  username : 'adminR'
+  password : '123zxc123'
+  ```
+
+
 ## Department Endpoints
 
 ### List Departments
