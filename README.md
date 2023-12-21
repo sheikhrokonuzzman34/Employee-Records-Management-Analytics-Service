@@ -23,7 +23,6 @@ Run the test suite:
 python manage.py test
 ```   
 
-## API Endpoints
 
 ## Base URL
 - All endpoints are relative to the base URL: `https://example.com/api/`
